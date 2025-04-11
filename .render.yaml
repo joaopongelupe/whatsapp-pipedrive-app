@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: whatsapp-pipedrive-app
+    env: python
+    buildCommand: ""
+    startCommand: "python main.py"
+    envVars:
+      - key: WHATSAPP_TOKEN
+        value: seu_token_do_whatsapp
+      - key: VERIFY_TOKEN
+        value: seu_verify_token
+      - key: PIPEDRIVE_TOKEN
+        value: seu_token_do_pipedrive
